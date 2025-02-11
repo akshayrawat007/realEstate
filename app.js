@@ -10,7 +10,7 @@ import messageRoute from "./routes/message.route.js"
 
 const app = express();
 
-app.use(cors({origin: "https://starlit-stardust-b2bfb6.netlify.app", credentials: true}));
+app.use(cors({origin: "https://starlit-stardust-b2bfb6.netlify.app/", credentials: true}));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/users", userRoute)
